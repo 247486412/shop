@@ -1,0 +1,3 @@
+com\shop\dto\input\UserInputDTO.class
+com\shop\dto\input\UserLoginInputDTO.class
+com\shop\dto\output\UserOutputDTO.class

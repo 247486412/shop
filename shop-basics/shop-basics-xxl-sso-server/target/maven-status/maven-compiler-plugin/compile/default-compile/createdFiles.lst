@@ -1,0 +1,12 @@
+com\xxl\sso\server\controller\WebController.class
+com\xxl\sso\server\core\model\UserInfo.class
+com\xxl\sso\server\service\UserService.class
+com\xxl\sso\server\controller\interceptor\PermissionInterceptor.class
+com\xxl\sso\server\config\XxlSsoConfig.class
+com\xxl\sso\server\core\result\ReturnT.class
+com\xxl\sso\server\controller\AppController.class
+com\xxl\sso\server\controller\interceptor\MyWebMvcConfigurer.class
+com\xxl\sso\server\XxlSsoServerApplication.class
+com\xxl\sso\server\service\impl\UserServiceImpl.class
+com\xxl\sso\server\feign\MemberLogiinServiceFeign.class
+com\xxl\sso\server\controller\resolver\WebExceptionResolver.class

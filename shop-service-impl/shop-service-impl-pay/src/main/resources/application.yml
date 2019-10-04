@@ -1,0 +1,51 @@
+server:
+  port: 8600
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+spring:
+  application:
+    name: app-shop-pay
+  redis:
+    host: 192.168.25.142
+    port: 6379
+    password: 123456
+    jedis:
+      pool:
+        max-idle: 100
+        min-idle: 1
+        max-active: 1000
+        max-wait: -1
+  ###数据库相关连接
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.25.142:3306/shop-pay?useUnicode=true&characterEncoding=UTF-8
+  rabbitmq:
+    ####连接地址
+    host: 127.0.0.1
+    ####端口号
+    port: 5672
+    ####账号
+    username: root
+    ####密码
+    password: 123456
+    virtual-host: /rabbit_test
+    ###开启消息确认机制 生产者发送消息到mq服务器confirms
+    publisher-confirms: true
+    publisher-returns: true
+####打印MyBatias日志
+logging:
+  level:
+    ### 开发环境使用DEBUG 生产环境info或者error
+    com.mayikt.member.mapper: DEBUG
+###多线程配置
+threadPool:
+  ###核心线程数
+  corePoolSize: 10
+  ###最大线程数
+  maxPoolSize: 20
+  ##  队列容量
+  queueCapacity: 16

@@ -1,0 +1,14 @@
+com\shop\PortalWebApp.class
+com\shop\member\controller\RegisterController.class
+com\shop\portal\controller\IndexController.class
+com\shop\member\controller\VerifyController.class
+com\shop\member\controller\req\vo\LoginVo.class
+com\shop\feign\QQAuthoriFeign.class
+com\shop\member\controller\QQAuthoriController.class
+com\shop\feign\MemberServiceFeign.class
+com\shop\member\controller\req\vo\RegisterVo.class
+com\shop\config\XxlSsoConfig.class
+com\shop\feign\MemberRegisterServiceFeign.class
+com\shop\member\controller\LoginController.class
+com\shop\feign\MemberLoginServiceFeign.class
+com\shop\member\controller\ExitController.class

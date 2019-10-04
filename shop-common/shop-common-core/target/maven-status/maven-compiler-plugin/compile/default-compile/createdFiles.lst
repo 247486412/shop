@@ -1,0 +1,12 @@
+com\shop\constants\Constants.class
+com\shop\bean\MyBeanUtils.class
+com\shop\core\token\GenerateToken.class
+com\shop\core\utils\MD5Util.class
+com\shop\core\utils\TypeCastHelper.class
+com\shop\base\BasePo.class
+com\shop\base\BaseApiService.class
+com\shop\core\utils\RegexUtils.class
+com\shop\core\transaction\RedisAndDBTransaction.class
+com\shop\base\BaseResponse.class
+com\shop\error\GlobalExceptionHandler.class
+com\shop\core\utils\RedisUtil.class

@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /xxl-sso-server
+spring:
+  freemarker:
+    charset: UTF-8
+    request-context-attribute: request
+    settings:
+      number_format: 0.##########
+    suffix: .ftl
+    templateLoaderPath: classpath:/templates/
+  mvc:
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:/static/
+  application:
+    name: app-shop-xxl-sso-server
+xxl:
+  sso:
+    redis:
+      address: redis://192.168.25.142:6379
+      expire:
+        minite: 1440
+      password: 123456
+
+    path:
+      login: http://127.0.0.1
+      logout: http://127.0.0.1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+ribbon:
+  ###指的是建立连接所用的时间，适用于网络状况正常的情况下，两端连接所用的时间。
+  ReadTimeout: 5000
+  ###指的是建立连接后从服务器读取到可用资源所用的时间。
+  ConnectTimeout: 5000

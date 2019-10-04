@@ -1,0 +1,59 @@
+3235241 DEBUG [2019-09-19 16:26:58]  Invoking destroy() on bean with name 'characterEncodingFilter'
+3235242 DEBUG [2019-09-19 16:26:58]  Invoking destroy() on bean with name 'httpPutFormContentFilter'
+3235242 DEBUG [2019-09-19 16:26:58]  Invoking destroy() on bean with name 'hiddenHttpMethodFilter'
+3235242 DEBUG [2019-09-19 16:26:58]  Invoking destroy() on bean with name 'requestContextFilter'
+3235242 DEBUG [2019-09-19 16:26:58]  Retrieved dependent beans for bean 'redisConnectionFactory': [redisTemplate, stringRedisTemplate, reactiveRedisTemplate]
+3235242 DEBUG [2019-09-19 16:26:58]  Retrieved dependent beans for bean 'redisTemplate': [redisReferenceResolver]
+3235242 DEBUG [2019-09-19 16:26:58]  Retrieved dependent beans for bean 'redisReferenceResolver': [redisConverter]
+3235243 DEBUG [2019-09-19 16:26:58]  Invoking destroy() on bean with name 'redisConnectionFactory'
+3236605 DEBUG [2019-09-19 16:27:00]  Returning cached instance of singleton bean 'sessionRepository'
+3236605 DEBUG [2019-09-19 16:27:00]  Cleaning up sessions expiring at Thu Sep 19 16:27:00 CST 2019
+3236605 DEBUG [2019-09-19 16:27:00]  Opening RedisConnection
+3236606 DEBUG [2019-09-19 16:27:00]  Invoking destroy method 'shutdown' on bean with name 'lettuceClientResources'
+3236627 DEBUG [2019-09-19 16:27:00]  Invoking destroy() on bean with name 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+3236628 DEBUG [2019-09-19 16:27:00]  Retrieved dependent beans for bean 'refreshScope': [contextRefresher, eurekaClient, eurekaApplicationInfoManager]
+3236628 DEBUG [2019-09-19 16:27:00]  Retrieved dependent beans for bean 'contextRefresher': [refreshEventListener]
+3236628 DEBUG [2019-09-19 16:27:00]  Invoking destroy() on bean with name 'refreshScope'
+3236636 DEBUG [2019-09-19 16:27:00]  Invoking destroy method on bean 'scopedTarget.eurekaClient': public synchronized void com.netflix.discovery.DiscoveryClient.shutdown()
+3236636 DEBUG [2019-09-19 16:27:00]  Retrieved dependent beans for bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': [org.springframework.context.annotation.internalConfigurationAnnotationProcessor]
+3236856 ERROR [2019-09-19 16:27:00]  Unexpected error occurred in scheduled task.
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.25.142:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:964)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:932)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:785)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:299)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:132)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:95)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:82)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:211)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:184)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:95)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:158)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:132)
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:393)
+	at org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration.lambda$configureTasks$0(RedisHttpSessionConfiguration.java:242)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.25.142:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:229)
+	at io.lettuce.core.RedisClient.connectStandalone(RedisClient.java:253)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:202)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:56)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:957)
+	... 24 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:347)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at io.lettuce.core.DefaultConnectionFuture.get(DefaultConnectionFuture.java:57)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:226)
+	... 28 more

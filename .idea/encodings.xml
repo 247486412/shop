@@ -3,16 +3,42 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-basics" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-basics/shop-basics-elk-kafka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-basics/shop-basics-springcloud-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-basics/shop-basics-springcloud-zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-basics/shop-basics-xxl-sso-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-common/shop-common-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-common/shop-common-core-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-job" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-job/shop-job-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-plugin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-plugin/shop-plugin-alipay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-plugin/shop-plugin-unionpay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-portal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-portal/shop-portal-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-portal/shop-portal-web-pay" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-service-api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop-service-api-entitys" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop-service-api-entitys/shop-service-api-entity-weixin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-api-dto" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-api-dto/shop-service-api-dto-member" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-api-dto/shop-service-api-dto-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-api-dto/shop-service-api-dto-product" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-api-dto/shop-service-api-dto-weixin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-api/shop-service-api-authorization" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-api/shop-service-api-goods" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-api/shop-service-api-integral" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-service-api/shop-service-api-member" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-api/shop-service-api-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-api/shop-service-api-seckill" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-service-api/shop-service-api-weixin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-service-impl" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop-service-impl/shop-service-member-impl" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop-service-impl/shop-service-weixin-impl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-impl/shop-service-impl-authorization" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-impl/shop-service-impl-goods" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-impl/shop-service-impl-integral" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-impl/shop-service-impl-member" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-impl/shop-service-impl-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-impl/shop-service-impl-seckill" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-impl/shop-service-impl-weixin" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

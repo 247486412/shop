@@ -1,0 +1,4 @@
+com\shop\web\utils\CookieUtils.class
+com\shop\web\utils\RandomValidateCodeUtil.class
+com\shop\web\constants\WebConstants.class
+com\shop\web\base\BaseWebController.class

@@ -1,0 +1,27 @@
+###服务启动端口号
+server:
+  port: 8800
+###服务名称(服务注册到eureka名称)
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+spring:
+  application:
+    name:  app-shop-goods
+  redis:
+    host: 192.168.25.142
+    port: 6379
+    password: 123456
+    jedis:
+      pool:
+        max-idle: 100
+        min-idle: 1
+        max-active: 1000
+        max-wait: -1
+  ###数据库相关连接
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.25.142:3306/auto?useUnicode=true&characterEncoding=UTF-8

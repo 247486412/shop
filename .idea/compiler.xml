@@ -6,25 +6,77 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shop-service-api-entity-weixin" />
-        <module name="shop-service-api-weixin" />
+        <module name="shop-service-impl-authorization" />
+        <module name="shop-service-api-dto-pay" />
+        <module name="shop-service-impl-member" />
+        <module name="shop-basics-elk-kafka" />
+        <module name="shop-service-api-goods" />
         <module name="shop-service-api-member" />
         <module name="shop-basics-springcloud-eureka" />
-        <module name="shop-service-member-impl" />
-        <module name="shop-service-weixin-impl" />
+        <module name="shop-service-api-dto-weixin" />
+        <module name="shop-service-api-dto-member" />
+        <module name="shop-job-pay" />
+        <module name="shop-plugin-unionpay" />
+        <module name="shop-service-api-seckill" />
+        <module name="shop-portal-web" />
+        <module name="shop-portal-web-pay" />
+        <module name="shop-common-core-web" />
+        <module name="shop-common-core" />
+        <module name="shop-service-impl-seckill" />
+        <module name="shop-service-api-dto-product" />
+        <module name="shop-service-impl-weixin" />
+        <module name="shop-basics-xxl-sso-server" />
+        <module name="shop-service-api-weixin" />
+        <module name="shop-service-api-integral" />
+        <module name="shop-service-api-authorization" />
+        <module name="shop-service-impl-pay" />
+        <module name="shop-service-impl-goods" />
+        <module name="shop-plugin-alipay" />
+        <module name="shop-service-api-pay" />
+        <module name="shop-service-impl-integral" />
         <module name="shop-basics-springcloud-zuul" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shop-service-api-entity-weixin" target="1.8" />
+      <module name="shop-service-api-entitys" target="1.8" />
+      <module name="shop-service-api-member-entity" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shop-basics-elk-kafka" options="-parameters" />
       <module name="shop-basics-springcloud-eureka" options="-parameters" />
       <module name="shop-basics-springcloud-zuul" options="-parameters" />
+      <module name="shop-basics-xxl-sso-server" options="-parameters" />
+      <module name="shop-common-core" options="-parameters" />
+      <module name="shop-common-core-web" options="-parameters" />
+      <module name="shop-job-pay" options="-parameters" />
+      <module name="shop-plugin-alipay" options="-parameters" />
+      <module name="shop-plugin-unionpay" options="-parameters" />
+      <module name="shop-portal" options="-parameters" />
+      <module name="shop-portal-web" options="-parameters" />
+      <module name="shop-portal-web-pay" options="-parameters" />
+      <module name="shop-service-api-authorization" options="-parameters" />
+      <module name="shop-service-api-dto-member" options="-parameters" />
+      <module name="shop-service-api-dto-pay" options="-parameters" />
+      <module name="shop-service-api-dto-product" options="-parameters" />
+      <module name="shop-service-api-dto-weixin" options="-parameters" />
       <module name="shop-service-api-entity-weixin" options="-parameters" />
+      <module name="shop-service-api-goods" options="-parameters" />
+      <module name="shop-service-api-integral" options="-parameters" />
       <module name="shop-service-api-member" options="-parameters" />
+      <module name="shop-service-api-member-entity" options="-parameters" />
+      <module name="shop-service-api-pay" options="-parameters" />
+      <module name="shop-service-api-seckill" options="-parameters" />
       <module name="shop-service-api-weixin" options="-parameters" />
-      <module name="shop-service-member-impl" options="-parameters" />
-      <module name="shop-service-weixin-impl" options="-parameters" />
+      <module name="shop-service-impl-authorization" options="-parameters" />
+      <module name="shop-service-impl-goods" options="-parameters" />
+      <module name="shop-service-impl-integral" options="-parameters" />
+      <module name="shop-service-impl-member" options="-parameters" />
+      <module name="shop-service-impl-pay" options="-parameters" />
+      <module name="shop-service-impl-seckill" options="-parameters" />
+      <module name="shop-service-impl-weixin" options="-parameters" />
     </option>
   </component>
 </project>

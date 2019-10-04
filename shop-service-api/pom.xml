@@ -14,14 +14,22 @@
     <modules>
         <module>shop-service-api-weixin</module>
         <module>shop-service-api-member</module>
+        <module>shop-service-api-goods</module>
+        <module>shop-service-api-pay</module>
+        <module>shop-service-api-integral</module>
+        <module>shop-service-api-authorization</module>
+        <module>shop-service-api-seckill</module>
     </modules>
     <dependencies>
-        <!-- swagger-spring-boot -->
         <dependency>
-            <groupId>com.spring4all</groupId>
-            <artifactId>swagger-spring-boot-starter</artifactId>
-            <version>1.7.1.RELEASE</version>
+            <groupId>com.shop</groupId>
+            <artifactId>shop-common-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.shop</groupId>
+            <artifactId>shop-common-core-web</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>

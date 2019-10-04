@@ -1,0 +1,4 @@
+com\shop\member\serviceApi\MemberLoginService.class
+com\shop\member\serviceApi\MemberRegisterService.class
+com\shop\member\serviceApi\QQAuthoriService.class
+com\shop\member\serviceApi\MemberService.class

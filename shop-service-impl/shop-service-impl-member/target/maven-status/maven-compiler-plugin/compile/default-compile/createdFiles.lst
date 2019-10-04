@@ -1,0 +1,10 @@
+com\shop\service\Impl\MemberLoginServiceImpl.class
+com\shop\service\Impl\MemberServiceImpl.class
+com\shop\service\Impl\QQAuthoriServiceImpl.class
+com\shop\service\mapper\PO\UserPO.class
+com\shop\service\Impl\MemberRegisterServiceImpl.class
+com\shop\service\mapper\UserMapper.class
+com\shop\service\feign\VerificationCodeServiceFeign.class
+com\shop\service\mapper\PO\UserTokenPo.class
+com\shop\MemberApp.class
+com\shop\service\mapper\UserTokenMapper.class

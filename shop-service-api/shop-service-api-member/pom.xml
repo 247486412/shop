@@ -17,5 +17,10 @@
             <artifactId>shop-service-api-weixin</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.shop</groupId>
+            <artifactId>shop-service-api-dto-member</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>

@@ -1,0 +1,12 @@
+D:\IDE-work\shop\shop-parent\shop-basics\shop-basics-xxl-sso-server\src\main\java\com\xxl\sso\server\config\XxlSsoConfig.java
+D:\IDE-work\shop\shop-parent\shop-basics\shop-basics-xxl-sso-server\src\main\java\com\xxl\sso\server\service\impl\UserServiceImpl.java
+D:\IDE-work\shop\shop-parent\shop-basics\shop-basics-xxl-sso-server\src\main\java\com\xxl\sso\server\controller\AppController.java
+D:\IDE-work\shop\shop-parent\shop-basics\shop-basics-xxl-sso-server\src\main\java\com\xxl\sso\server\controller\interceptor\PermissionInterceptor.java
+D:\IDE-work\shop\shop-parent\shop-basics\shop-basics-xxl-sso-server\src\main\java\com\xxl\sso\server\controller\resolver\WebExceptionResolver.java
+D:\IDE-work\shop\shop-parent\shop-basics\shop-basics-xxl-sso-server\src\main\java\com\xxl\sso\server\controller\interceptor\MyWebMvcConfigurer.java
+D:\IDE-work\shop\shop-parent\shop-basics\shop-basics-xxl-sso-server\src\main\java\com\xxl\sso\server\controller\WebController.java
+D:\IDE-work\shop\shop-parent\shop-basics\shop-basics-xxl-sso-server\src\main\java\com\xxl\sso\server\feign\MemberLogiinServiceFeign.java
+D:\IDE-work\shop\shop-parent\shop-basics\shop-basics-xxl-sso-server\src\main\java\com\xxl\sso\server\core\model\UserInfo.java
+D:\IDE-work\shop\shop-parent\shop-basics\shop-basics-xxl-sso-server\src\main\java\com\xxl\sso\server\core\result\ReturnT.java
+D:\IDE-work\shop\shop-parent\shop-basics\shop-basics-xxl-sso-server\src\main\java\com\xxl\sso\server\service\UserService.java
+D:\IDE-work\shop\shop-parent\shop-basics\shop-basics-xxl-sso-server\src\main\java\com\xxl\sso\server\XxlSsoServerApplication.java
